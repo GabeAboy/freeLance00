@@ -1,0 +1,23 @@
+.landing{background-color: grey;
+        height: 100vh;width: 100vw;}
+.quote{background-color: blue;
+      height: 400px;width: 100vw;}
+.aboutParent{height:100vh;width: 100vw;
+            background-color: grey;
+            position:relative;}
+.about{height: 75%;width: 40%;
+      background-color: blue;
+      position: absolute;
+      left: 45%;
+      bottom: 0px;}
+.review{height: 50vh;width: 100vw;
+        background-color: blue;}
+.menu{height: 1500px;width: 100vw;
+      background-color: grey;
+      position: relative;
+      }
+.menuContainer{width:70vw;height:1000px;
+                background-color: blue;
+              position: absolute;
+              left: 0px;
+              bottom:0px;}
