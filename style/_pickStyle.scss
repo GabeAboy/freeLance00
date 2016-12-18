@@ -1,13 +1,14 @@
 
 body{margin: 0;padding: 0;
 
+
   .landing{background-image: url('../photos/spice.jpg');
           background-position:center;;
           background-repeat: no-repeat;
           background-size: cover;
           height: 100vh;width: 100vw;}
   .quote{background-color: #212733;
-        height: 400px;width: 100vw;
+        height: 45vh;width: 100vw;
         font-family: europa,sans-serif;
         font-weight: 300;
         text-align: center;
@@ -44,7 +45,7 @@ body{margin: 0;padding: 0;
     position:relative;
     background-image: url(../photos/utahVally.jpg);
     background-repeat: no-repeat;
-    background-size: cover;;
+    background-size: cover;
     .about{
       height: 75%;width: 40%;
       background-color: #c5c5c5;
@@ -96,18 +97,55 @@ body{margin: 0;padding: 0;
 
   .review{height: 50vh;width: 100vw;
           background-color: #212733;}
-  .menu{height: 1500px;width: 100vw;
+  .menu{
+    height: 1500px;width: 100vw;
         background-image: url(../photos/garlic.jpg);
         background-position:center;
         background-size:cover;
         position: relative;
 
-        .menuContainer{width:70vw;height:1000px;
-                        background-color: #c5c5c5;
+        .menuContainer{
+                      width:70vw;height:90%;
+                      background-color: #c5c5c5;
                       position: absolute;
-                      left: 0px;
-                      bottom:0px;}
+                      left: 15%;
+                      bottom:0px;
+                    }
         }
+    .menuImg{
+      height: 100vh;width: 100vw;
+      background-color: black;
+      .block{
+        background-image: url(../photos/cookie.jpg);
+        background-position: center;
+        background-size: cover;
+        float: left;
+        background-color: grey;
+        height: calc(100%/3);
+        width: calc(100%/4);
+      }
+    }
+    .aboutUs{
+      width: 100vw;height: 100vh;
+      background-image: url(../photos/map.jpg);
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      .info{
+        background-color: white;
+        position: absolute;
+        left: 5%;
+        bottom: 0;
+        height: 80%;
+        width: 35%;
+      }
+    }
+    footer{
+      width: 100vw;height:120px;
+      background-color: #212733;
 
-
+      h2{
+        display: inline-block;
+      }
+    }
 }
