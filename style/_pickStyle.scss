@@ -1,12 +1,24 @@
 
-body{margin: 0;padding: 0;
 
 
   .landing{background-image: url('../photos/spice.jpg');
           background-position:center;;
           background-repeat: no-repeat;
           background-size: cover;
-          height: 100vh;width: 100vw;}
+          height: 100vh;width: 100vw;
+          display: flex;
+    .ham{
+        width:100px;
+        height:10px;
+        background-color: black;
+        display: flex;
+        justify-content: flex-end;
+      .line{
+        width:100px;height:2px;
+        background-color: black;
+      }
+    }
+        }
   .quote{background-color: #212733;
         height: 45vh;width: 100vw;
         font-family: europa,sans-serif;
@@ -114,16 +126,19 @@ body{margin: 0;padding: 0;
         }
     .menuImg{
       height: 100vh;width: 100vw;
-      background-color: black;
-      .block{
-        background-image: url(../photos/cookie.jpg);
-        background-position: center;
-        background-size: cover;
-        float: left;
-        background-color: grey;
-        height: calc(100%/3);
-        width: calc(100%/4);
-      }
+
+
+        .block{
+
+          background-image: url(../photos/cookie.jpg);
+          background-position: center;
+          background-size: cover;
+          float: left;
+          background-color: grey;
+          height: calc(100%/3);
+          width: calc(100%/4);
+        }
+
     }
     .aboutUs{
       width: 100vw;height: 100vh;
@@ -138,6 +153,7 @@ body{margin: 0;padding: 0;
         bottom: 0;
         height: 80%;
         width: 35%;
+
       }
     }
     footer{
@@ -148,4 +164,14 @@ body{margin: 0;padding: 0;
         display: inline-block;
       }
     }
-}
+    @media(max-width: 1000px){
+     .aboutParent{
+       background-image: none;
+       .about{
+         width: 100%;height:100%;
+         position: static;
+       }
+     }
+
+
+    }
