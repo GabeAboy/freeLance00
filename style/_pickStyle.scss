@@ -7,13 +7,11 @@
           background-size: cover;
           height: 100vh;width: 100vw;
 
-
     .holdTheLine{
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      width: 100vw;height: 100px;
 
+      width: 100vw;height: 100px;
+      display: flex;
+      justify-content: flex-end;
       align-items: center;
       .ham{
           width:50px;
@@ -21,16 +19,18 @@
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          margin-right: 10%;
-          
+          margin-right: 5%;
+
         .line{
 
-          width:60px;height:3px;
-          background-color: black;
+          width:100%;height:3px;
+          background-color: white;
         }
       }
+
     }
 }
+
   .quote{background-color: #212733;
         height: 45vh;width: 100vw;
         font-family: europa,sans-serif;
@@ -71,7 +71,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     .about{
-      height: 75%;width: 40%;
+      height: 75%;width: 50%;
       background-color: #c5c5c5;
       opacity: .8;
       position: absolute;
@@ -97,6 +97,7 @@
           height: 100%;width: 85%;
           display: table;
           h1{
+
             display: table-cell;
             vertical-align:middle;
           }
@@ -105,11 +106,13 @@
 
         .content{
             margin: auto;
-            padding-top: 15%;
+            padding-top: 5%;
             width: 80%;height: 80%;
 
             #innerContent{
-              font-size: 20px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              font-size: 12px;
               line-height: 1.6;
               font-family: garamond-premier-pro-display,"Minion Pro",Times,"Times New Roman",Serif;
             }
@@ -141,8 +144,11 @@
       flex-direction: row;
       flex-wrap: wrap;
       display: flex;
-
+        .block:hover{
+          .color{display: none;}
+        }
         .block{
+
 
           background-image: url(../photos/cookie.jpg);
           background-position: center;
@@ -151,6 +157,12 @@
           background-color: grey;
           height: calc(100%/3);
           width: calc(100%/4);
+          .color{
+            background-color: red;
+            opacity: .20;
+            width: 100%;
+            height: 100%;
+          }
         }
 
     }
@@ -178,7 +190,7 @@
         display: inline-block;
       }
     }
-    @media(max-width: 1000px){
+    @media(max-width: 700px){
      .aboutParent{
        background-image: none;
        .about{
