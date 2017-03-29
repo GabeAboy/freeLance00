@@ -22,6 +22,7 @@
           margin-right: 5%;
           margin-top: 15px;
 
+
         .line{
 
           width:100%;height:2px;
@@ -124,7 +125,37 @@
 
 
   .review{height: 50vh;width: 100vw;
-          background-color: #212733;}
+          background-color: #212733;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .top{
+            height: 25%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: europa,sans-serif;
+            font-weight: 300;
+
+          }
+          .mid{
+            height: 25%;
+            width: 100%;
+            flex-wrap: wrap;
+
+            .acclaim{
+              width:100px;height:100px;
+            }
+          }
+          .bot{
+            height: 25%;
+            width: 100%;
+
+          }
+
+        }
   .menu{
     height: 1500px;width: 100vw;
         background-image: url(../photos/garlic.jpg);
