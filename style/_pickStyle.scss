@@ -141,18 +141,35 @@
 
           }
           .mid{
+
             height: 25%;
             width: 100%;
             flex-wrap: wrap;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
 
             .acclaim{
               width:100px;height:100px;
             }
           }
           .bot{
-            height: 25%;
+            height: 40%;
             width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .button{
+              font-family: garamond-premier-pro-display,"Minion Pro",Times,"Times New Roman",Serif;
+              color:#e8e5e3;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width:310px;height:65px;
+              border: solid white 3px;
+              color:white;
 
+            }
           }
 
         }
