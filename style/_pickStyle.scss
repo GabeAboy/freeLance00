@@ -219,9 +219,9 @@
         .block{
 
 
-          background-image: url(../photos/cookie.jpg);
-          background-position: center;
-          background-size: cover;
+          // background-image: url(../photos/cookie.jpg);
+          // background-position: center;
+          // background-size: cover;
 
           background-color: grey;
           height:50%;
@@ -231,13 +231,20 @@
             opacity: .50;
             width: 100%;
             height: 100%;
+            background-image: url("./photos/cookie.jpg");
+            transition: all cubic-bezier(.1,.1,.1,.1) 5.5s;
+position: relative;
+}
+            img{
+              width: 100%;height: 100%;
+            }
           }
-        }
+        
 
     }
     .aboutUs{
       width: 100vw;height: 100vh;
-      background-image: url(../photos/map.jpg);
+      // background-image: url(../photos/map.jpg);
       background-size: cover;
       background-position: center;
       position: relative;
